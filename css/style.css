@@ -1,238 +1,272 @@
-           :root {
-              --clr-primaryBg: #ffffff;
-              --clr-txtHighLight: #416980;
-              --clr-txtNeutral: black;
-              --clr-txtCTA: #65BEFF;
-              --clr-primaryHeading: #F1677D;
-              --ff-heading: 'Inter', Sans-serif;
-              --ff-primary: 'Open Sans', Sans-serif;
-          }
-          
-          * {
-              border: 1px solid yellow;
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-          }
-          
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
-          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;0,800;1,300;1,600&display=swap');
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-              font-family: var(--ff-heading);
-          }
-          
-          h1 {
-              font-weight: 700;
-              font-size: 3rem;
-          }
-          
-          h2 {
-              font-weight: 600;
-              font-size: 2.25rem;
-          }
-          
-          h3 {
-              font-weight: 600;
-              font-size: 1.5rem;
-          }
-          
-          p {
-              font-family: var(--ff-primary);
-              font-weight: 500;
-              font-size: 1.25rem;
-              /* color: white; */
-          }
-          
-          body {
-              background-color: #F8F5EA;
-          }
-          
-          img {
-              /* width: auto;
-                                                                                                                     height: auto; */
-          }
-          
-          main {
-              border-bottom: tomato solid 2px;
-          }
-          
-          .sectionHeading {
-              margin: 2rem;
-              text-align: center;
-          }
-          
-          .flexContainer {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 1rem;
-              color: white;
-              margin: 3rem;
-          }
-          
-          .flexContainer--column {
-              display: flex;
-              flex-direction: column;
-              flex: 1;
-          }
-          
-          @media only screen and (min-width: 530px) {
-              .flexContainer {
-                  flex-direction: row;
-              }
-          }
-          
-          .contentContainer {
-              justify-content: center;
-          }
-          
-          .contentContainer--flexStart {
-              justify-content: flex-start;
-          }
-          
-          .container--txtWrap--narrow {
-              min-width: 20.625rem;
-              max-width: 31.625rem;
-          }
-          
-          .container--grandParent {
-              width: fit-content;
-          }
-          
-          .sectionDivide {
-              border-bottom: tomato solid 2px;
-          }
-          
-          .hStyleRed {
-              color: #F1687D;
-          }
-          
-          #generalRemark {
-              margin: 0 auto 0;
-          }
-          
-          #generalRemark p {
-              color: var(--clr-txtHighLight);
-              font-size: 1rem;
-              font-style: italic;
-              text-align: center;
-          }
-          /* 1. product intro using bootstrap 4 jumbotron */
-          
-          .mainJumbotron {
-              background-image: url(../images/cbccasestudy\ home\ image.svg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              height: calc(100vh - 25px);
-              display: flex;
-              align-items: center;
-          }
-          /* Jumbotron copy */
-          
-          .jumboCopy {
-              margin: 3rem;
-              width: 70%;
-              min-width: 20.625rem;
-              max-width: 31.625rem;
-              color: var(--clr-txtHighLight);
-          }
-          
-          .jumboCopy h5 {
-              color: tomato;
-          }
-          
-          @media only screen and (min-width: 500px) {
-              .jumboCopy {
-                  margin-top: 6rem
-              }
-          }
-          /* 1.1. my role */
-          
-          #myRoleSection {
-              background-color: var(--clr-txtHighLight);
-              /* padding: 3rem 0 3rem 0; */
-          }
-          /* 2. problem */
-          
-          #problemSection {
-              background-color: #353333;
-          }
-          
-          #problemContent {
-              justify-content: center;
-          }
-          
-          #problemContent h2 {
-              text-align: center;
-          }
-          /* 
+                                                 :root {
+                                                    --clr-primaryBg: #ffffff;
+                                                    --clr-txtHighLight: #416980;
+                                                    --clr-txtNeutral: black;
+                                                    --clr-txtCTA: #65BEFF;
+                                                    --clr-primaryHeading: #F1677D;
+                                                    --ff-heading: 'Inter', Sans-serif;
+                                                    --ff-primary: 'Open Sans', Sans-serif;
+                                                }
+                                                
+                                                * {
+                                                    /* border: 1px solid black; */
+                                                    box-sizing: border-box;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                }
+                                                
+                                                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+                                                @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;0,800;1,300;1,600&display=swap');
+                                                h1,
+                                                h2,
+                                                h3,
+                                                h4,
+                                                h5,
+                                                h6 {
+                                                    font-family: var(--ff-heading);
+                                                }
+                                                
+                                                h1 {
+                                                    font-weight: 700;
+                                                    font-size: 3rem;
+                                                }
+                                                
+                                                h2 {
+                                                    font-weight: 600;
+                                                    font-size: 2.25rem;
+                                                }
+                                                
+                                                h3 {
+                                                    font-weight: 600;
+                                                    font-size: 1.5rem;
+                                                }
+                                                
+                                                p {
+                                                    font-family: var(--ff-primary);
+                                                    font-weight: 500;
+                                                    font-size: 1.25rem;
+                                                    /* color: white; */
+                                                }
+                                                
+                                                body {
+                                                    background-color: #F8F5EA;
+                                                }
+                                                
+                                                img {
+                                                    max-width: 100%;
+                                                    height: auto;
+                                                }
+                                                
+                                                .imgWrap--80p img {
+                                                    max-width: 80%;
+                                                    margin: 0 auto;
+                                                }
+                                                
+                                                .imgWrap--narrow50 img {
+                                                    max-height: 13rem;
+                                                    width: auto;
+                                                    margin-top: 2rem;
+                                                }
+                                                
+                                                main {
+                                                    border-bottom: tomato solid 2px;
+                                                }
+                                                
+                                                .sectionHeading {
+                                                    margin: 2rem;
+                                                    text-align: center;
+                                                }
+                                                
+                                                .flexContainer {
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    gap: 1rem;
+                                                    color: white;
+                                                    margin: 2rem;
+                                                }
+                                                
+                                                .flexContainer--column {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    flex: 1;
+                                                }
+                                                
+                                                @media only screen and (min-width: 530px) {
+                                                    .flexContainer {
+                                                        flex-direction: row;
+                                                    }
+                                                }
+                                                
+                                                .contentContainer {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                }
+                                                
+                                                .contentContainer--flexStart {
+                                                    justify-content: flex-start;
+                                                }
+                                                
+                                                .container--txtWrap--narrow {
+                                                    min-width: 20.625rem;
+                                                    max-width: 31.625rem;
+                                                }
+                                                
+                                                .container--grandParent {
+                                                    width: fit-content;
+                                                }
+                                                
+                                                .sectionDivide {
+                                                    border-bottom: tomato solid 2px;
+                                                }
+                                                
+                                                .hStyleRed {
+                                                    color: #F1687D;
+                                                }
+                                                
+                                                #generalRemark {
+                                                    margin: 0 auto 0;
+                                                }
+                                                
+                                                #generalRemark p {
+                                                    color: var(--clr-txtHighLight);
+                                                    font-size: 1rem;
+                                                    font-style: italic;
+                                                    text-align: center;
+                                                }
+                                                /* 1. product intro using bootstrap 4 jumbotron */
+                                                
+                                                .mainJumbotron {
+                                                    background-image: url(../images/cbccasestudy\ home\ image.svg);
+                                                    background-size: cover;
+                                                    background-repeat: no-repeat;
+                                                    height: calc(100vh - 25px);
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                                /* Jumbotron copy */
+                                                
+                                                .jumboCopy {
+                                                    margin: 3rem;
+                                                    width: 70%;
+                                                    min-width: 20.625rem;
+                                                    max-width: 31.625rem;
+                                                    color: var(--clr-txtHighLight);
+                                                }
+                                                
+                                                .jumboCopy h5 {
+                                                    color: tomato;
+                                                }
+                                                
+                                                @media only screen and (min-width: 500px) {
+                                                    .jumboCopy {
+                                                        margin-top: 6rem
+                                                    }
+                                                }
+                                                
+                                                #colSystem {
+                                                    margin: 0 auto;
+                                                }
+                                                
+                                                .container {
+                                                    padding: 3rem;
+                                                }
+                                                
+                                                .container h3 {
+                                                    color: var(--clr-primaryHeading);
+                                                }
+                                                
+                                                .container p {
+                                                    color: var(--clr-txtHighLight);
+                                                }
+                                                /* 2. define using bootstrap 4 carousel css here */
+                                                
+                                                .carousel-control-prev-icon,
+                                                .carousel-control-next-icon {
+                                                    filter: invert(75%);
+                                                }
+                                                /* 1.1. my role */
+                                                
+                                                #myRoleSection {
+                                                    background-color: var(--clr-txtHighLight);
+                                                    /* padding: 3rem 0 3rem 0; */
+                                                }
+                                                /* 2. problem */
+                                                
+                                                #problemSection {
+                                                    background-color: #353333;
+                                                }
+                                                
+                                                #problemContent {
+                                                    justify-content: center;
+                                                }
+                                                
+                                                #problemContent h2 {
+                                                    text-align: center;
+                                                }
+                                                /* 
     3. research */
-          
-          #researchSection .flexContainer--column {
-              flex-direction: column;
-              color: var(--clr-txtHighLight);
-          }
-          
-          #researchHead {
-              color: var(--clr-txtHighLight);
-              text-align: center;
-          }
-          
-          section #commonResponseSection {
-              background-color: var(--clr-primaryHeading);
-          }
-          
-          #commonResponseSection h3 {
-              color: white;
-              text-align: center;
-              margin-top: 2rem;
-          }
-          
-          #responseContent {
-              justify-content: center;
-          }
-          
-          #responseContent .container--txtWrap--narrow {
-              max-width: 11.6875rem;
-              margin-left: 1rem;
-              margin-right: 1rem;
-          }
-          
-          #responseContent p {
-              color: white;
-          }
-          
-          #corsel {
-              background-color: tomato;
-          }
-          
-          #impactDiagram {
-              display: flex;
-              justify-content: center;
-              margin-bottom: 2rem;
-          }
-          
-          #researchEnd {
-              background-color: var(--clr-txtHighLight);
-          }
-          /* redesign phase */
-          
-          #redesignSection .flexContainer--column {
-              flex-direction: column;
-              color: var(--clr-txtHighLight);
-          }
-          
-          #redesignHead {
-              color: var(--clr-txtHighLight);
-              text-align: center;
-          }
-          
-          @media only screen and (max-width: 500px) {
-               :root {
-                  font-size: .75rem;
-              }
-          }
+                                                
+                                                #researchSection .flexContainer--column {
+                                                    flex-direction: column;
+                                                    color: var(--clr-txtHighLight);
+                                                }
+                                                
+                                                #researchHead {
+                                                    color: var(--clr-txtHighLight);
+                                                    text-align: center;
+                                                }
+                                                
+                                                section #commonResponseSection {
+                                                    background-color: var(--clr-primaryHeading);
+                                                }
+                                                
+                                                #commonResponseSection h3 {
+                                                    color: white;
+                                                    text-align: center;
+                                                    margin-top: 2rem;
+                                                }
+                                                
+                                                #responseContent {
+                                                    justify-content: center;
+                                                }
+                                                
+                                                #responseContent .container--txtWrap--narrow {
+                                                    max-width: 11.6875rem;
+                                                    margin-left: 1rem;
+                                                    margin-right: 1rem;
+                                                }
+                                                
+                                                #responseContent p {
+                                                    color: white;
+                                                }
+                                                
+                                                #corsel {
+                                                    background-color: tomato;
+                                                }
+                                                
+                                                #impactDiagram {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    margin-bottom: 2rem;
+                                                }
+                                                
+                                                #researchEnd {
+                                                    background-color: var(--clr-txtHighLight);
+                                                }
+                                                /* redesign phase */
+                                                
+                                                #redesignSection .flexContainer--column {
+                                                    flex-direction: column;
+                                                    color: var(--clr-txtHighLight);
+                                                }
+                                                
+                                                #redesignHead {
+                                                    color: var(--clr-txtHighLight);
+                                                    text-align: center;
+                                                }
+                                                
+                                                @media only screen and (max-width: 500px) {
+                                                     :root {
+                                                        font-size: .75rem;
+                                                    }
+                                                }
