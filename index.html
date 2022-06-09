@@ -11,7 +11,7 @@
 <!-- 0. navigation used bootstrap navigation -->
 
 <body>
-    <ul class="nav justify-content-center">
+    <!-- <ul class="nav justify-content-center">
         <li class="nav-item">
             <a class="nav-link active" href="#">Active</a>
         </li>
@@ -19,12 +19,59 @@
             <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#conclusionLink">Conclusion</a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
-    </ul>
+    </ul> -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overviewLink">Overview</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Research
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#userTestLink">User Test</a></li>
+                            <li><a class="dropdown-item" href="#analysisLink">Analysis</a></li>
+                            <li><a class="dropdown-item" href="#defineLink">Define</a></li>
+                            <li><a class="dropdown-item" href="#strategyLink">Strategy</a></li>
+                            <li><a class="dropdown-item" href="#ideationLink">Ideation</a></li>
+                        </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Design
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#wireframeLink">Wireframe</a></li>
+                                <li><a class="dropdown-item" href="#prototypeLink">Prototype</a></li>
+                                <li><a class="dropdown-item" href="#testIterateLink">Test and Iterate</a></li>
+                                <li><a class="dropdown-item" href="#solutionsLink">Solutions</a></li>
+                            </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#conclusionLink">Conclusion</a>
+                            </li>
+                        </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
     <!-- 1. main product introduction used bootstrap jumbotron -->
     <main>
         <div class="mainJumbotron cbcBackground">
@@ -83,24 +130,31 @@
     <section id="researchSection">
 
         <div class="flexContainer flexContainer--column">
-            <h1 id="researchHead">Research</h1>
-            <img src="images/research process 2.svg">
+            <h1 id="researchHead">1. Research</h1>
+            <img src="images/research Process.svg">
         </div>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
-                <h3 class="hStyleRed">The Process</h3>
-                <p>We initiated our process by surveying the current website. This included a general analysis of the purpose and potential users of the site, a heuristic evaluation, colour accessibility testing and prospective user flow. Building from this
-                    we were able to redline and annotate potential problems users may have, and develop a proto persona.</p>
-                <p>After evaluating potential problems and establishing a point of view from our proto persona we were able to develop a detailed and focused testing plan to conduct with our potential users. This data led to developing solutions and responsive
-                    interaction design that would have a positive impact on CBC Radio-Canada’s usability.</p>
+                <h3 class="hStyleRed">Research Process</h3>
+                <p>Our <span class="boldTxt hStyleRed">Research Process</span> began by surveying the current website. This included a general analysis of the purpose of CBC Radio-Canada website, potential users, a heuristic evaluation, colour accessibility
+                    testing and prospective user flow. Building from this we were able <span class="boldTxt hStyleRed">hypothesize potential problems</span> users may have, and <span class="boldTxt hStyleRed">develop a proto persona.</span></p>
+
+                <p>After evaluating potential problems and establishing a point of view from our proto persona we were able to develop a detailed and focused research plan. Our<span class="boldTxt hStyleRed"> Research Strategy</span> followed as such, conduct
+                    <span class="boldTxt hStyleRed">User Test</span>, <span class="boldTxt hStyleRed">Analyze</span> the data gathered, <span class="boldTxt hStyleRed">Define</span> our user problems, goals and priorities, Develop<span class=”boldTxt
+                        hStyleRed”>Strategy</span> to address defined problem , <span class="boldTxt hStyleRed"> Ideate </span> initial solution opportunities based on research findings. It was from this data that we would begin our redesign phase to
+                    <span class="boldTxt hStyleRed"> develop solutions </span> with a positive impact on CBC Radio-Canada’s usability.</p>
+
             </div>
 
             <img src="images/cbc research questions.svg">
         </div>
         <div class="sectionDivide2"></div>
+        <a id="userTestLink">
+            <h2 class="sectionHeading hStyleRed">1.1 User Test</h2>
+        </a>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
-                <h3 class="hStyleRed">Research: User Test</h3>
+                <h3 class="hStyleRed">User Testing</h3>
                 <p>Our team conducted 5 usability tests on desktop and 2 on mobile in order to identify any pain points or sources of confusion the user experienced navigating the current CBC Radio-Canada website. Participants varied in identifying gender
                     and ranged from ages 30-45, within Canada.</p>
                 <p>Our method to obtain data was to provide users with a scenario and task designed to mimic the interest and interaction of our proto persona and target areas of desired impact for the current site. Users were asked to provide general comments
@@ -111,24 +165,21 @@
 
         </div>
 
-        <section id="commonResponseSection">
-            <h3 class="hStyleRed">Common Participant Responses</h3>
-            <div class="contentContainer flexContainer ">
-                <div class="flexContainer--column container--txtWrap--narrow ">
+        <h3 class="txtCenter hStyleRed">Common Participant Responses</h3>
+        <div class="contentContainer flexContainer ">
+            <div class="flexContainer--column container--txtWrap--narrow300 ">
 
-                    <p class="clrStylelight">“I still need this website explained to me this site is not helping me find out about the radio”</p>
-                </div>
-                <div class="flexContainer--column container--txtWrap--narrow ">
-
-                    <p class="clrStylelight"> “Tab had a bad heading for looking for podcast but I got lucky it being the first place I looked"</p>
-                </div>
+                <p class="boldTxt">“I still need this website explained to me this site is not helping me find out about the radio”</p>
             </div>
-        </section>
-        <h2 class="sectionHeading hStyleRed">Analysis</h2>
-        <div id="generalRemark" class="flexContainer container--txtWrap--narrow">
-            <p>Users seemed to navigate towards the search bar for the initial task (perhaps because of task language). Subsequently users would quickly hovered dropdown menus of main navigation and seemed to familiarize themselves with the site and completed
-                future tasks through recall.</p>
+            <div class="flexContainer--column container--txtWrap--narrow300">
+
+                <p class="boldTxt"> “Tab had a bad heading for looking for podcast but I got lucky it being the first place I looked"</p>
+            </div>
         </div>
+        <div class="sectionDivide2"></div>
+        <a id="analysisLink">
+            <h2 class="sectionHeading hStyleRed">1.2 Analysis</h2>
+        </a>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                 <h3 class="hStyleRed">User Test Analysis</h3>
@@ -167,10 +218,15 @@
                     </uL>
                 </div>
             </div>
-
+        </div>
+        <div id="generalRemark" class="flexContainer container--txtWrap--narrow">
+            <p>Note: Users seemed to navigate towards the search bar for the initial task (perhaps because of task language). Subsequently users would quickly hovered dropdown menus of main navigation and seemed to familiarize themselves with the site and
+                completed future tasks through recall.</p>
         </div>
         <div class="sectionDivide2"></div>
-        <h2 class="sectionHeading hStyleRed">Define</h2>
+        <a id="defineLink">
+            <h2 class="sectionHeading hStyleRed">1.3 Define</h2>
+        </a>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                 <h3 class="hStyleRed">Problem Statement</h3>
@@ -245,7 +301,9 @@
 
 
         <div class="sectionDivide2"></div>
-        <h2 class="sectionHeading hStyleRed">Strategy</h2>
+        <a id="strategyLink">
+            <h2 class="sectionHeading hStyleRed">1.4 Strategy</h2>
+        </a>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                 <h3 class="hStyleRed">Information Architecture</h3>
@@ -275,7 +333,9 @@
             <img src="images/impact diagram.svg">
         </div>
         <div class="sectionDivide2"></div>
-        <h2 class="sectionHeading hStyleRed">Design</h2>
+        <a id="ideationLink">
+            <h2 class="sectionHeading hStyleRed">1.5 Ideation</h2>
+        </a>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                 <h3 class="hStyleRed">Initial Design Ideation</h3>
@@ -308,10 +368,13 @@
         <section id="redesignSection">
 
             <div class="flexContainer flexContainer--column">
-                <h1 id="redesignHead">Redesign</h1>
-                <img src="images/redesign process (1).svg">
+                <h1 id="redesignHead">2. Design</h1>
+                <img src="images/redesign process.svg">
             </div>
             <div class="contentContainer flexContainer">
+                <a id="wireframeLink">
+                    <h3 class="sectionHeading hStyleRed">2.1 wireframe</h3>
+                </a>
                 <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                     <h3 class="hStyleRed">Wireframes</h3>
                     <p>After developing iterated versions of navigation and primary UI elements our team completed Lo-fi and Hi-Fi wireframes through analysis, iteration and testing for both desktop and mobile. </p>
@@ -356,7 +419,9 @@
             </div>
 
             <div class="sectionDivide2"></div>
-            <h2 class="sectionHeading hStyleRed">Prototype</h2>
+            <a id="prototypeLink">
+                <h2 class="sectionHeading hStyleRed">2.2 Prototype</h2>
+            </a>
             <div class="contentContainer flexContainer">
                 <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                     <h3 class="hStyleRed">Lo-fi Prototypess</h3>
@@ -397,7 +462,9 @@
                 </div>
             </div>
             <div class="sectionDivide2"></div>
-            <h2 class="sectionHeading hStyleRed">Testing and Iteration</h2>
+            <a id="testIterateLink">
+                <h2 class="sectionHeading hStyleRed">2.3 Testing and Iteration</h2>
+            </a>
             <div class="contentContainer flexContainer">
                 <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                     <h3 class="hStyleRed">A/B Testing</h3>
@@ -434,7 +501,9 @@
                 </div>
             </div>
             <div class="sectionDivide2"></div>
-            <h2 class="sectionHeading hStyleRed">Design Solutions</h2>
+            <a id="solutionsLink">
+                <h2 class="sectionHeading hStyleRed">2.4 Solutions</h2>
+            </a>
             <div class="contentContainer flexContainer">
                 <div class="flexContainer flexContainer--column container--txtWrap--narrow">
                     <h3 class="hStyleRed">Responsive Design</h3>
@@ -457,7 +526,9 @@
                 </div>
             </div>
             <div class="sectionDivide1"></div>
-            <h1 id="conclusionHead">Conclusion</h1>
+            <a id="conclusionLink">
+                <h1 id="conclusionHead">3. Conclusion</h1>
+            </a>
             <div class="txtCenter imgWrap--65p">
                 <img src="images/gif final deliverablee deskyop.gif" id="finalDesktop">
                 <img src="images/gif final deliverable mobile.gif" id="finalMobile">
@@ -481,5 +552,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 </html>
