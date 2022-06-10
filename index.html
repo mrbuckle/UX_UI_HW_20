@@ -10,23 +10,8 @@
 
 <!-- 0. navigation used bootstrap navigation -->
 
-<body>
-    <!-- <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#conclusionLink">Conclusion</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-    </ul> -->
-
-    <nav class="navbar navbar-expand-lg bg-light">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav id="overview" class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,17 +20,14 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#overviewLink">Overview</a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Research
                 </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#researchHead">Research Process</a></li>
                             <li><a class="dropdown-item" href="#userTestLink">User Test</a></li>
                             <li><a class="dropdown-item" href="#analysisLink">Analysis</a></li>
                             <li><a class="dropdown-item" href="#defineLink">Define</a></li>
@@ -57,6 +39,7 @@
                       Design
                     </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#redesignHead">Design Process</a></li>
                                 <li><a class="dropdown-item" href="#wireframeLink">Wireframe</a></li>
                                 <li><a class="dropdown-item" href="#prototypeLink">Prototype</a></li>
                                 <li><a class="dropdown-item" href="#testIterateLink">Test and Iterate</a></li>
@@ -84,10 +67,11 @@
                 <p> 2. Develop responsive redesign for desktop and mobile that provide solutions to navigation, and engagment issues.<br>
                     <h5>(University of Toronto UX/UI Bootcamp Project)</h5>
                 </p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">view case study</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Try Out Prototype</a>
             </div>
         </div>
         <div class="sectionDivide1"></div>
+        <h2 class="txtCenter hStyleRed">Overview</h2>
     </main>
     <!-- bootstrap 4 col system html starts here -->
     <div id="colSystem" class="container">
@@ -150,7 +134,7 @@
         </div>
         <div class="sectionDivide2"></div>
         <a id="userTestLink">
-            <h2 class="sectionHeading hStyleRed">1.1 User Test</h2>
+            <h2 id="userTestHeader" class="sectionHeading hStyleRed">1.1 User Test</h2>
         </a>
         <div class="contentContainer flexContainer">
             <div class="flexContainer flexContainer--column container--txtWrap--narrow">
@@ -371,12 +355,25 @@
                 <h1 id="redesignHead">2. Design</h1>
                 <img src="images/redesign process.svg">
             </div>
+            <a id="wireframeLink">
+                <h3 class="sectionHeading hStyleRed">2.1 wireframe</h3>
+            </a>
             <div class="contentContainer flexContainer">
-                <a id="wireframeLink">
-                    <h3 class="sectionHeading hStyleRed">2.1 wireframe</h3>
-                </a>
+
                 <div class="flexContainer flexContainer--column container--txtWrap--narrow">
-                    <h3 class="hStyleRed">Wireframes</h3>
+                    <h3 class="hStyleRed">Design Process</h3>
+                    <p>loreum iosos </p>
+                    <p>loreum iosos </p>
+                </div>
+                <div class="container--txtWrap--narrow imgWrap--narrow50">
+                    <img src="images/gif cbc Desktop wireframe.gif">
+                </div>
+            </div>
+            <div class="sectionDivide2"></div>
+            <div class="contentContainer flexContainer">
+
+                <div class="flexContainer flexContainer--column container--txtWrap--narrow">
+                    <h3 class="hStyleRed">Lo-fi to Hi-fi Wireframing</h3>
                     <p>After developing iterated versions of navigation and primary UI elements our team completed Lo-fi and Hi-Fi wireframes through analysis, iteration and testing for both desktop and mobile. </p>
                     <p>Our wireframes were focused on the key screens our User Persona would navigate and reflected the goals of CBC Radio-Canada. </p>
 
@@ -545,7 +542,8 @@
                 </div>
             </div>
         </section>
-
+        <span id="backTop" class="returnUp dNone">
+            <img src="images/return_up.svg"></span>
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
